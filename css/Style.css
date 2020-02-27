@@ -1,0 +1,309 @@
+
+/*-------------
+ 	General
+-------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #2196F3;
+	font-weight: 800;
+	text-align: center;
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #2196F3;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 125px 100px;
+}
+
+/**header**/
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 100px 0;
+	
+}
+.header h2 {
+    font-family: 'Encode Sans Semi Condensed', ;
+    font-size: 40px;
+    
+}
+.header nav {
+    display: flex;
+    
+}
+.header nav li {
+    margin: 0 15px;
+    font-size: 20px;
+}
+.header nav li:first-child{
+	margin-left: 0;	
+}
+
+.header nav li:last-child{
+	margin-right: 0;	
+}
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.hero .background-image{
+	background-image: url(../img/InicioPrincipal.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: whitesmoke;
+	opacity: 0.15;
+}
+/*--------------------
+ 	Our Work Section
+---------------------*/
+
+
+
+
+
+/**configuracion responsive**/
+
+@media (max-width:576px){
+    .header{
+		flex-direction: column;		
+    }
+    .header h2{
+        font-size: 15px;
+    }
+    .header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+        
+    }
+    .header nav li {
+        margin: 0 15px;
+        font-size: 10px;
+    }
+    .header nav li:first-child{
+        margin-left: 0;	
+    }
+    
+    .header nav li:last-child{
+        margin-right: 0;	
+    }
+    .hero{
+        min-height: 79vw;
+        min-width: auto;
+    }
+    
+
+}
+
+@media (min-width:577px) and (max-width:720px) {
+    .header{
+		flex-direction: flex;		
+    }
+    .header h2{
+        font-size: 20px;
+    }
+    .header nav {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .header nav li {
+        margin: 0 15px;
+        font-size: 15px;
+    }
+    .header nav li:first-child{
+        margin-left: 0;	
+    }
+    
+    .header nav li:last-child{
+        margin-right: 0;	
+    }
+    .hero{
+        min-height: 79vw;
+        min-width: auto;
+    }
+
+}
+@media (min-width:720px) and (max-width:960px){
+    .header{
+		flex-direction: flex;		
+    }
+    .header h2{
+        font-size: 20px;
+    }
+    .header nav {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .header nav li {
+        font-size: 0 15px;
+        font-size: 20px;
+    }
+    .header nav li:first-child{
+        margin-left: 0;	
+    }
+    
+    .header nav li:last-child{
+        margin-right: 0;	
+    }
+    .hero{
+        min-height: 79vw;
+        min-width: auto;
+    }
+
+}
+@media (max-width:800px) and (orientation:landscape){
+    .header{
+		flex-direction: column;		
+    }
+    .header h2{
+        font-size: 20px;
+    }
+    .header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        
+    }
+    .header nav li {
+        font-size: 0 15px;
+        font-size: 10px;
+    }
+    .header nav li:first-child{
+        margin-left: 0;	
+    }
+    
+    .header nav li:last-child{
+        margin-right: 0;	
+    }
+    .hero{
+        min-height: 79vw;
+        min-width: 100vh;
+    }
+
+}
+@media (min-width:960px) and (max-width:1144px) {
+    .header{
+		flex-direction: flex;		
+    }
+    .header h2{
+        font-size: 30px;
+    }
+    .header nav {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .header nav li {
+        margin: 0 15px;
+        font-size: 20px;
+    }
+    .header nav li:first-child{
+        margin-left: 0;	
+    }
+    
+    .header nav li:last-child{
+        margin-right: 0;	
+    }
+    .hero{
+        min-height: 79vw;
+        min-width: auto;
+    }
+
+}
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+
