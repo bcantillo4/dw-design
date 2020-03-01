@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DW-Design</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Source+Code+Pro:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/Style.css">
+  
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <h2><a href="#">DW-Design</a></h2>
+
+		<nav class="navegacion">
+			<li><a href="./index.html">Inicio</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Portafolio</a></li>
+			<li><a href="quote.html" active>Cotización</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</nav>
+
+  </header>
+  
+  <section class="hero">
+		<div class="background-image"></div>
+
+  </section>
+
+  <section class="our-work">
+	<h3 class="title">Calcula tus paquetes</h3>
+    <div class="container">  
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-8 col-10">
+            <form action="" id="calcularPrecio">
+              <fieldset><legend>Pagina web</legend>
+                <!-- checked = true -->
+                <p><input value="300" type="radio" name="opWeb" checked = true>Diseño Básico 3 paginas Index, Contacto, Formularios</p>
+                <p><input value="400" type="radio" name="opWeb">Diseño Medio 4 paginas Index, Contacto, Formularios, </p>
+                <p><input value="500" type="radio" name="opWeb">Diseño Medio 5 paginas Index, Contacto, Formularios</p>
+              </fieldset>
+              <fieldset><legend>Diseño de Imagenes o logos</legend>
+                <p><input value="0" type="radio" name="opDWeb" >Poseo todas las imagenes y logos(no requiero ajustes)</p>
+                <p><input value="200" type="radio" name="opDWeb" checked = true >Diseño de hasta 10 imagenes y un logo sencillo</p>
+                <p><input value="400" type="radio" name="opDWeb">Diseño de hasta 20 imagenes y un logo con mejoras profesionales</p>
+                <p><input value="800" type="radio" name="opDWeb">Crear imágen Corporativa Incluye logos e imagen en Vector</p>
+              </fieldset>
+              <fieldset><legend>Community Manager</legend>
+                <p><input value="0" type="radio" name="opCM">No deseo el servicio</p>
+                <p><input value="200" type="radio" name="opCM" checked = true>Dos publicaciones semanal en 3 cuentas por dos meses</p>
+                <p><input value="600" type="radio" name="opCM">Tres publicaciones semanal en 3 cuentas por dos meses</p>
+              </fieldset>
+            </form>
+
+            <form action="" id="Descuento">
+              <fieldset><legend>Mantenimiento</legend>
+                <p><input value="1" type="radio" name="opD" checked = true >No deseo Mantenimiento</p>
+                <p><input value="2" type="radio" name="opD">Mantenimiento por 6 meses (Solo Mantenimiento de Web y Community Manager) <span class="Descuento">Ahorras un mes</span></p>
+                
+                <p><input value="3" type="radio" name="opD"> Mantenimiento por 12 meses (Solo Mantenimiento de Web y Community Manager) <span class="Descuento"> Ahorras dos meses</span></p>
+                
+              </fieldset>
+            </form>
+          </div> <!--  Cierre col -->
+    </div> <!--  Cierre row -->
+    <div>
+      <p class="valor">De acuerdo a lo selecionado su precio final sera de<span id="precioFinal"></span><span>$</span></p>
+      
+    </div>
+    
+    </div><!--  Cierre main -->
+
+  </section>
+
+<footer>
+
+
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="./js/quote.js"></script>
+
+
+</body>
+</html>

@@ -126,8 +126,21 @@ section{
  
 ---------------------*/
 
+/*-------------------- Cotizador ---------------------*/
 
+.Descuento{
+    color: red;
+  }
 
+  span{
+    color: blue;
+    font-weight: bold;
+  }
+  .valor{
+    font-weight: bold;
+  }
+
+/*-------------------- Fin Cotizador---------------------*/
 
 /**configuracion responsive**/
 
